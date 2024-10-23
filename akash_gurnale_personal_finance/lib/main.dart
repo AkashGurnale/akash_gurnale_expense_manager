@@ -39,6 +39,14 @@ class ExpenseManagerApp extends StatelessWidget {
         name: 'expenses',
         builder: (context, state) => ExpensesListScreen(),
       ),
+            GoRoute(
+        path: '/add-expense',
+        name: 'add-expense',
+        builder: (context, state) {
+          final category = state.extra as Category?; // Retrieve the selected category (if passed)
+          return AddExpenseScreen(initialCategory: category); // Pass the category to AddExpenseScreen
+        },
+      ),
     ],
   );
 

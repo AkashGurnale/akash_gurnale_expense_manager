@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:hive/hive.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import '../data/models/expense_model.dart';
-import 'expense_details_screen.dart'; // Import the ExpenseDetailsScreen
+import 'expense_details_screen.dart'; 
 
 class ExpensesListScreen extends StatelessWidget {
   @override
